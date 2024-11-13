@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../../../bs/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            background: url(./../../../assets/doomback.jpg) no-repeat 0px 0px fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container-fluid mt-3">
+        <div class="row">
+            <div class="col-4 m-auto">
+                <div class="card">
+                    <div class="card-header">
+                        <img src="./../../../assets/doom.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col text-center">
+                                <h3 id="likes-display"></h3>
+                                <button class="btn btn-success" id="likes-btn">Likes <i
+                                        class="bi bi-hand-thumbs-up-fill"></i></button>
+                            </div>
+                            <div class="col text-center">
+                                <h3 id="dislikes-display"></h3>
+                                <button class="btn btn-danger" id="dislikes-btn">Dislikes <i
+                                        class="bi bi-hand-thumbs-down-fill"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center bg-secondary text-white">
+                        <h4>Total:- <span id="total-display"></span></h4>
+                        <button class="btn btn-dark" id="reset-btn">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./likes.js"></script>
+</body>
+
+</html>
